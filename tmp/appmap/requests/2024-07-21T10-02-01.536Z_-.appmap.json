@@ -1,0 +1,83 @@
+{
+  "events": [
+    {
+      "event": "call",
+      "http_server_request": {
+        "path_info": "/",
+        "request_method": "GET",
+        "headers": {
+          "Host": "localhost:8080",
+          "Connection": "keep-alive",
+          "Sec-Ch-Ua": "\"Not/A)Brand\";v=\"8\", \"Chromium\";v=\"126\", \"Google Chrome\";v=\"126\"",
+          "Sec-Ch-Ua-Mobile": "?0",
+          "Sec-Ch-Ua-Platform": "\"Windows\"",
+          "Upgrade-Insecure-Requests": "1",
+          "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36",
+          "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+          "Sec-Fetch-Site": "none",
+          "Sec-Fetch-Mode": "navigate",
+          "Sec-Fetch-User": "?1",
+          "Sec-Fetch-Dest": "document",
+          "Accept-Encoding": "gzip, deflate, br, zstd",
+          "Accept-Language": "en-GB,en-US;q=0.9,en;q=0.8",
+          "Cookie": "connect.sid=s%3AbZU2B7L3KKYrMzfSvGs7RaKaxRnxZX4Y.RbNacZtBP61Xykf6JcOOQeB85UrA3v5rqGAgTCjBxFc"
+        },
+        "protocol": "HTTP/1.1"
+      },
+      "id": 1,
+      "thread_id": 0
+    },
+    {
+      "event": "return",
+      "http_server_response": {
+        "status_code": 500,
+        "headers": {
+          "X-Powered-By": "Express",
+          "Content-Security-Policy": "default-src 'none'",
+          "X-Content-Type-Options": "nosniff",
+          "Content-Type": "text/html; charset=utf-8",
+          "Content-Length": "2756"
+        },
+        "return_value": {
+          "class": "[ResponseBody]",
+          "value": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n<meta charset=\"utf-8\">\n<title>Error</title>\n</head>\n<body>\n<pre>ReferenceError: C:\\Users\\AMANDEEP\\OneDrive\\old desktop\\WebDev\\PROJECT\\views\\layouts\\boilerplate.ejs:35<br> &nbsp; &nbsp;33| &nbsp; &lt;/head&gt;\r<br> &nbsp; &nbsp;34| &nbsp; &lt;body&gt;\r<br> &gt;&gt; 35| &nbsp; &nbsp; &lt;%- include(&quot;../includes/navbar.ejs&quot;) %&gt;\r<br> &nbsp; &nbsp;36| &nbsp; &nbsp; &lt;div class=&quot;container&quot;&gt;\r<br> &nbsp; &nbsp;37| &nbsp; &nbsp; &nbsp; &lt;%- include(&quot;../includes/flash.ejs&quot;) %&gt; &lt;%- body -%&gt;\r<br> &nbsp; &nbsp;38| &nbsp; &nbsp; &lt;/div&gt;\r<br><br>C:\\Users\\AMANDEEP\\OneDrive\\old desktop\\WebDev\\PROJECT\\views\\includes\\navbar.ejs:46<br> &nbsp; &nbsp;44| &nbsp; &nbsp; &nbsp; &lt;div class=&quot;navbar-nav ms-auto&quot;&gt;\r<br> &nbsp; &nbsp;45| &nbsp; &nbsp; &nbsp; &nbsp; &lt;a class=&quot;nav-link&quot; href=&quot;/listings/new&quot;&gt;List your home&lt;/a&gt;\r<br> &gt;&gt; 46| &nbsp; &nbsp; &nbsp; &nbsp; &lt;% if(!currUser){ %&gt;\r<br> &nbsp; &nbsp;47| &nbsp; &nbsp; &nbsp; &nbsp; &lt;a class=&quot;nav-link&quot; href=&quot;/signup&quot;&gt;&lt;b&gt;Signup&lt;/b&gt;&lt;/a&gt;\r<br> &nbsp; &nbsp;48| &nbsp; &nbsp; &nbsp; &nbsp; &lt;a class=&quot;nav-link&quot; href=&quot;/login&quot;&gt;&lt;b&gt;Login&lt;/b&gt;&lt;/a&gt;\r<br> &nbsp; &nbsp;49| &nbsp; &nbsp; &nbsp; &nbsp; &lt;%} %&gt; &lt;% if(currUser){ %&gt;\r<br><br>currUser is not defined<br> &nbsp; &nbsp;at eval (eval at compile (C:\\Users\\AMANDEEP\\OneDrive\\old desktop\\WebDev\\PROJECT\\node_modules\\ejs\\lib\\ejs.js:673:12), &lt;anonymous&gt;:12:8)<br> &nbsp; &nbsp;at navbar (C:\\Users\\AMANDEEP\\OneDrive\\old desktop\\WebDev\\PROJECT\\node_modules\\ejs\\lib\\ejs.js:703:17)<br> &nbsp; &nbsp;at include (C:\\Users\\AMANDEEP\\OneDrive\\old desktop\\WebDev\\PROJECT\\node_modules\\ejs\\lib\\ejs.js:701:39)<br> &nbsp; &nbsp;at eval (eval at compile (C:\\Users\\AMANDEEP\\OneDrive\\old desktop\\WebDev\\PROJECT\\node_modules\\ejs\\lib\\ejs.js:673:12), &lt;anonymous&gt;:12:17)<br> &nbsp; &nbsp;at boilerplate (C:\\Users\\AMANDEEP\\OneDrive\\old desktop\\WebDev\\PROJECT\\node_modules\\ejs\\lib\\ejs.js:703:17)<br> &nbsp; &nbsp;at tryHandleCache (C:\\Users\\AMANDEEP\\OneDrive\\old desktop\\WebDev\\PROJECT\\node_modules\\ejs\\lib\\ejs.js:274:36)<br> &nbsp; &nbsp;at exports.renderFile (C:\\Users\\AMANDEEP\\OneDrive\\old desktop\\WebDev\\PROJECT\\node_modules\\ejs\\lib\\ejs.js:491:10)<br> &nbsp; &nbsp;at renderFile (C:\\Users\\AMANDEEP\\OneDrive\\old desktop\\WebDev\\PROJECT\\node_modules\\ejs-mate\\lib\\index.js:298:7)<br> &nbsp; &nbsp;at C:\\Users\\AMANDEEP\\OneDrive\\old desktop\\WebDev\\PROJECT\\node_modules\\ejs-mate\\lib\\index.js:353:7<br> &nbsp; &nbsp;at tryHandleCache (C:\\Users\\AMANDEEP\\OneDrive\\old desktop\\WebDev\\PROJECT\\node_modules\\ejs\\lib\\ejs.js:280:5)</pre>\n</body>\n</html>\n"
+        }
+      },
+      "id": 2,
+      "thread_id": 0,
+      "parent_id": 1,
+      "elapsed": 2.7103580003604293
+    }
+  ],
+  "version": "1.12",
+  "metadata": {
+    "client": {
+      "name": "appmap-node",
+      "version": "2.23.0",
+      "url": "https://github.com/getappmap/appmap-node"
+    },
+    "language": {
+      "name": "javascript",
+      "engine": "Node.js",
+      "version": "v20.11.1"
+    },
+    "app": "project",
+    "recorder": {
+      "type": "requests",
+      "name": "requests"
+    },
+    "name": "GET / (500) — 2024-07-21T10:02:01.536Z"
+  },
+  "classMap": [
+    {
+      "type": "http",
+      "name": "HTTP server requests",
+      "children": [
+        {
+          "type": "route",
+          "name": "GET /"
+        }
+      ]
+    }
+  ]
+}
